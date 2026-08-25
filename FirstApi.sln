@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstApi.Api", "FirstApi.Api\FirstApi.Api.csproj", "{AF06F42C-8D1A-4DE2-B5F0-9EDA135ED907}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FristApi.Api", "FristApi.Api\FristApi.Api.csproj", "{AF06F42C-8D1A-4DE2-B5F0-9EDA135ED907}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
