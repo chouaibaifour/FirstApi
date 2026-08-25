@@ -6,11 +6,12 @@ version: "1.0"
 
 #Specify IDE code to run analysis without container (Applied in CI/CD pipeline)
 ide: QDNET
+linter: JetBrains/qodana-action@v2025.1
 
 #Specify inspection profile for code analysis
 profile:
   name: qodana.starter
-
+fixesStrategy: apply
 #Enable inspections
 #include:
 #  - name: <SomeEnabledInspectionId>
