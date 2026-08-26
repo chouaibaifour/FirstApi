@@ -7,12 +7,16 @@ builder.Services.AddHttpLogging(opts =>
 builder.Logging.AddFilter(     
     "Microsoft.AspNetCore.HttpLogging", LogLevel.Information);
 
+
+
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
 {
     app.UseHttpLogging();
 }
+
+app.UseWelcomePage();
 
 
 app.MapGet("/", () => "Hello World!");
