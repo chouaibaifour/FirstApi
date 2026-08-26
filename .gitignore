@@ -3,3 +3,6 @@ obj/
 /packages/
 riderModule.iml
 /_ReSharper.Caches/
+.idea/
+FirstApi.sln.DotSettings.user
+_site/

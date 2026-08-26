@@ -16,9 +16,11 @@ if (app.Environment.IsDevelopment())
     app.UseHttpLogging();
 }
 
+app.UseDeveloperExceptionPage();
 
 app.UseStaticFiles();
 app.UseWelcomePage();
+app.UseRouting();
 app.MapGet("/", () => "Hello World!");
 
 app.MapGet("/person", () => new Person("Andrew", "Lock")); 
