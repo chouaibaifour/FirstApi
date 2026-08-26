@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.HttpLogging;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddHttpLogging(opts =>    
-    opts.LoggingFields = HttpLoggingFields.RequestProperties); 
+    opts.LoggingFields = HttpLoggingFields.All); 
 builder.Logging.AddFilter(     
     "Microsoft.AspNetCore.HttpLogging", LogLevel.Information);
 
@@ -16,9 +16,9 @@ if (app.Environment.IsDevelopment())
     app.UseHttpLogging();
 }
 
+
+app.UseStaticFiles();
 app.UseWelcomePage();
-
-
 app.MapGet("/", () => "Hello World!");
 
 app.MapGet("/person", () => new Person("Andrew", "Lock")); 
