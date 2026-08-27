@@ -14,9 +14,10 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
     app.UseHttpLogging();
+    app.UseDeveloperExceptionPage();
 }
 
-app.UseDeveloperExceptionPage();
+
 
 app.UseStaticFiles();
 app.UseWelcomePage();
